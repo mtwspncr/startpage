@@ -15,7 +15,15 @@ body {
 	    #forecast_embed {
 		    float: right;
 	    }
-	    
+#btmcontainer {
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	height: 350px;
+	background-color: white;
+	opacity: 75%;
+	    }
+	
 .clock {
     width: 33%;
     padding: 2%;    
@@ -114,7 +122,7 @@ setInterval( function() {
     </head>
     
 <body>
-    
+<div id="btmcontainer">    
 <div class="clock">
 <div id="Date"></div>
   <ul>
@@ -124,5 +132,6 @@ setInterval( function() {
   </ul>
 </div>
     <iframe style="position: absolute !important; float: right; bottom: 0; right: -10%;" id="forecast_embed" type="text/html" frameborder="0" height="245" width="50%" src="https://forecast.io/embed/#lat=40.7127&lon=-74.0059&name=NYC&font=Arial"> </iframe> 
+</div>
 </body>
 </html>
