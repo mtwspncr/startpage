@@ -25,11 +25,11 @@ body {
 	    }
 	
 .clock {
-    width: 33%;
-    padding: 2%;    
+    width: 33%;   
     color: #333333;
-	display:block;
+    display:block;
     position: relative;
+    margin: auto auto 0 0;
    }
 
 #Date {
@@ -130,7 +130,7 @@ setInterval( function() {
       <li id="min"></li>
   </ul>
 </div>
-    <iframe style="position: absolute !important; float: right; bottom: 0; right: -10%;" id="forecast_embed" type="text/html" frameborder="0" height="245" width="50%" src="https://forecast.io/embed/#lat=40.7127&lon=-74.0059&name=NYC&font=Arial"> </iframe> 
+    <iframe style="position: relative !important; float: right;" id="forecast_embed" type="text/html" frameborder="0" height="245" src="https://forecast.io/embed/#lat=40.7127&lon=-74.0059&name=NYC&font=Arial"> </iframe> 
 </div>
 </body>
 </html>
