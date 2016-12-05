@@ -51,9 +51,7 @@ body {
 
 #Date {
 	font-style: italic;
-    font-size: 1.2em;
-	letter-spacing: .1em;
-		word-spacing: .25em;
+    font-size: 1.4em;
 }
 
 ul {
@@ -118,7 +116,7 @@ var newDate = new Date();
 // Extract the current date from Date object
 newDate.setDate(newDate.getDate());
 // Output the day, date, month and year   
-$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+$('#Date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
 	
 setInterval( function() {
 	// Create a newDate() object and extract the minutes of the current time on the visitor's
